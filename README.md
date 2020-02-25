@@ -7,6 +7,8 @@ In recent times, with the increase in computational power, structured informatio
 
 
 #### Approach
+
+##### Link to Dashboard - https://my-dash-app-gcn3.herokuapp.com/
 To make deep learning models intuitive and their training transparent, several AI and visualization experts developed visualization tools and libraries, specifically for deep learning models. For instance, Tensorflow Playground [2] provides a learning environment for the Neural Network where users can choose and modify the parameters (such as learning rate, number of hidden layers, etc.) and visualize the output for all the neurons, impact of change in parameters on weights, and the final output over epochs. In this project, we aim to create one such visualization tool for Graph Convolutional Network (GCN) [3] - a deep learning approach used for semi-supervised classification of graph networks. GCN takes graph network as the input and comprises of multiple conventional layers, as shown in Figure-1. Often, the model implementation incorporates ReLu for non-linearity, dropout to avoid overfitting, and softmax, in the final stage, computes the probability for the classification of the nodes. The network learns the weights through backpropagation. To the best of our knowledge, there exists no way to visualize the parameters and underlying learning process of Graph Convolutional Networks.
 
 
