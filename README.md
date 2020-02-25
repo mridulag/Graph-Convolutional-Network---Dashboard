@@ -11,14 +11,19 @@ To make deep learning models intuitive and their training transparent, several A
 
 ![Figure 1](https://github.com/mridulag/Graph-Convolutional-Network-Dashboard/blob/master/Screenshots/Dashboard.png "Figure 1")
 
-
 ###### H6 Figure-1: Graph convolutional networks (GCN) comprises of multiple convolutional layers. We provide a graph network as an input where each node is a data point (depends on the dataset) and edges indicate relation between the nodes [4].
 
 
-In GCN, nodes of the input graph represent the units, and edges indicate the connection (non-directional and unweighted) between any two nodes. In GCN, each node has its feature matrix. In our visualization, we intend to show the classification of nodes across the layers, starting from first convolution layer, until we reach the output layer, and the significance of each feature (input and intermediate layers) as the training progresses over epochs. Figure-1b shows the paper prototype of the dashboard design after initial brainstorming. The top left chart shows the structure of the graph after the final classification. If we select any node in the graph, the feature map (input and intermediate layers) will pop up. On the top right side, we show the tSNE visualization of the node activations after the first convolutional layer. The bottom chart depicts the evolution of the graph network classification with respect to the training epochs. We can control the epochs through a slider.
+![Figure 2](https://github.com/mridulag/Graph-Convolutional-Network-Dashboard/blob/master/Screenshots/Dashboard_whiteboard.png "Figure 2")
+
+###### H6 Figure-2: Paper prototype after initial brainstorming [4].
 
 
-###### H6 Figure-2: (a) [Left] We created the dashboard in Dash, a python-based visualization tool. On the left plot, we depict evolution of graph network and on the right plot, we present tSNE chart. (b) [Right] User can study significance of features for each node, both - over epochs and across layers.
+In GCN, nodes of the input graph represent the units, and edges indicate the connection (non-directional and unweighted) between any two nodes. In GCN, each node has its feature matrix. In our visualization, we intend to show the classification of nodes across the layers, starting from first convolution layer, until we reach the output layer, and the significance of each feature (input and intermediate layers) as the training progresses over epochs. Figure 2 shows the paper prototype of the dashboard design after initial brainstorming. The top left chart shows the structure of the graph after the final classification. If we select any node in the graph, the feature map (input and intermediate layers) will pop up. On the top right side, we show the tSNE visualization of the node activations after the first convolutional layer. The bottom chart depicts the evolution of the graph network classification with respect to the training epochs. We can control the epochs through a slider.
+
+
+###### H6 
+-2: (a) [Left] We created the dashboard in Dash, a python-based visualization tool. On the left plot, we depict evolution of graph network and on the right plot, we present tSNE chart. (b) [Right] User can study significance of features for each node, both - over epochs and across layers.
 
 
 In the final revision, we updated the design and combined the first graph (which represented the final output) with the evolution graph. In addition to that, we added a slider to visualize the training progression of remaining charts (tSNE activations and the feature heatmaps) over epochs and make the dashboard more intuitive. By default, all the charts animate over epochs.
