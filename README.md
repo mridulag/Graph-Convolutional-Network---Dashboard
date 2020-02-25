@@ -10,6 +10,8 @@ To make deep learning models intuitive and their training transparent, several A
 
 
 ![Figure 1](https://github.com/mridulag/Graph-Convolutional-Network-Dashboard/blob/master/Screenshots/Dashboard.png "Figure 1")
+![Figure 2](https://github.com/mridulag/Graph-Convolutional-Network-Dashboard/blob/master/Screenshots/Dashboard_resize.png "Figure 1")
+
 
 ###### H6 Figure-1: Graph convolutional networks (GCN) comprises of multiple convolutional layers. We provide a graph network as an input where each node is a data point (depends on the dataset) and edges indicate relation between the nodes [4].
 
