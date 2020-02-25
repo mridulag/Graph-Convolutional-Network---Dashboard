@@ -11,7 +11,7 @@ To make deep learning models intuitive and their training transparent, several A
 
 ![Figure 1](https://github.com/mridulag/Graph-Convolutional-Network-Dashboard/blob/master/Screenshots/Dashboard.png "Figure 1")
 
-###### H6 Figure-1: (a) [Left] Graph convolutional networks (GCN) comprises of multiple convolutional layers. We provide a graph network as an input where each node is a data point (depends on the dataset) and edges indicate relation between the nodes [4]. (b) [Right] Paper prototype after initial brainstorming.
+###### H6 Figure-1: Graph convolutional networks (GCN) comprises of multiple convolutional layers. We provide a graph network as an input where each node is a data point (depends on the dataset) and edges indicate relation between the nodes [4].
 
 
 In GCN, nodes of the input graph represent the units, and edges indicate the connection (non-directional and unweighted) between any two nodes. In GCN, each node has its feature matrix. In our visualization, we intend to show the classification of nodes across the layers, starting from first convolution layer, until we reach the output layer, and the significance of each feature (input and intermediate layers) as the training progresses over epochs. Figure-1b shows the paper prototype of the dashboard design after initial brainstorming. The top left chart shows the structure of the graph after the final classification. If we select any node in the graph, the feature map (input and intermediate layers) will pop up. On the top right side, we show the tSNE visualization of the node activations after the first convolutional layer. The bottom chart depicts the evolution of the graph network classification with respect to the training epochs. We can control the epochs through a slider.
