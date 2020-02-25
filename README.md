@@ -22,9 +22,8 @@ To make deep learning models intuitive and their training transparent, several A
 In GCN, nodes of the input graph represent the units, and edges indicate the connection (non-directional and unweighted) between any two nodes. In GCN, each node has its feature matrix. In our visualization, we intend to show the classification of nodes across the layers, starting from first convolution layer, until we reach the output layer, and the significance of each feature (input and intermediate layers) as the training progresses over epochs. Figure-2 shows the paper prototype of the dashboard design after initial brainstorming. The top left chart shows the structure of the graph after the final classification. If we select any node in the graph, the feature map (input and intermediate layers) will pop up. On the top right side, we show the tSNE visualization of the node activations after the first convolutional layer. The bottom chart depicts the evolution of the graph network classification with respect to the training epochs. We can control the epochs through a slider.
 
 
-Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![Figure 2](https://github.com/mridulag/Graph-Convolutional-Network-Dashboard/blob/master/Screenshots/Dashboard_Whiteboard.png "Figure 2") |  ![Figure 1](https://github.com/mridulag/Graph-Convolutional-Network-Dashboard/blob/master/Screenshots/Dashboard.png "Figure 1")
+![Figure 3](https://github.com/mridulag/Graph-Convolutional-Network-Dashboard/blob/master/Screenshots/Dataset1_Part1.png "Figure 2") |  ![Figure 4](https://github.com/mridulag/Graph-Convolutional-Network-Dashboard/blob/master/Screenshots/Dataset1_Part2.png "Figure 1")
 
 
 ###### H6  Figure 3: (a) [Left] We created the dashboard in Dash, a python-based visualization tool. On the left plot, we depict evolution of graph network and on the right plot, we present tSNE chart. (b) [Right] User can study significance of features for each node, both - over epochs and across layers.
